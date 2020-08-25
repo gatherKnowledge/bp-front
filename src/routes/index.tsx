@@ -11,12 +11,12 @@ const history = createBrowserHistory();
 function Routes() {
   return (
     <Router history={history}>
-    <Switch>
-      <Route path="/1" exact component={TestComponent1} />
-      <Route path="/2" component={TestComponent2} />
-      <Redirect path="*" to="/1" />
-    </Switch>
-  </Router>
+      <Switch>
+        <Route path="/1" exact component={TestComponent1} />
+        <Route path="/2" component={TestComponent2} />
+        <Redirect path="*" to="/1" />
+      </Switch>
+    </Router>
   );
 }
 
